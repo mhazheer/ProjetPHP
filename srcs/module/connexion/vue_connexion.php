@@ -33,7 +33,7 @@ require_once  __dir__ .'/../../include/vue_generique.php';
     			
     		echo'<div class="login-page">
 				  	<div class="form">
-	    			  <h1>Inscription<h1>
+	    			  <h1> Inscription <h1>
 	    			  <form class="register-form" method="POST" action="index.php?module=connexion&action=inscription>
 					      <input type="hidden" name="action" value="inscription" />
 					      <input type="text" name="nom" placeholder="Nom*" required/>
