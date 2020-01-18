@@ -7,9 +7,12 @@ class ModeleContact extends ModeleGenerique{
 	}
 	function envoyerMessage($nom,$email, $message){
 		try{
+			$req =  (self::$bdd)->prepare("INSERT INTO `contact`(`nom`,`email`,`message`) VALUES (?,?,?)");
+			$req->bindParam(1,$nom);
+			$req->bindParam(2,$email);
+			$req->bindParam(3,$message);
+				$req->execute();
 			
-			$req =  (self::$bdd)->prepare("insert into contact values(DEFAULT,?,?,?)");
-				$req->execute(array($nom,$email,$message));
             	
 		}catch(PDOException $erreur){
             	echo 'La connexion a échoué :'. $erreur->getMessage();
