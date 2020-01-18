@@ -10,7 +10,7 @@ require_once  __dir__ .'/../../include/vue_generique.php';
 		public function afficherContenu(){
 			echo '<section>	
 			<div id="accueil">
-				<p>Slogan ou message de bienvenue</p>
+				<p>	Mon sport favori: lA Sieste.</p>
 			</div>		
 			<div class="box">
 				<h2>Nos activités</h2>
