@@ -7,19 +7,12 @@ require_once  __dir__ .'/../../include/vue_generique.php';
 		}
 
 		public function affiche_formulaire_connexion(){
-			/*echo '<form method="POST" action= "index.php?module=connexion&action=idOk" >
-				Identifiant:<input type="text" name="id" required><br>
-				Mot de passe:<input type="password" name="mdp" required><br>
-				<input type="submit" value="Se connecter">
-				 <p class="message">Pas encore inscrit? <a href="#" action="index.php?module=connexion&action=inscription">Créer un compte</a></p> 
-			</form>';
-			
-			*/
+		
 
 			 
 			echo' <div class="login-page">
 					<div class="form">
-				    	<h1>Connexion<h1>
+				    	<h1> Connexion <h1>
 					    <form class="login-form" method="POST" action="index.php?module=connexion&action=idOk">
 					      <input type="hidden" name="action" value="connexion"/>
 					      <input type="text" name="id" placeholder="Nom d\'utilisateur" required/>
@@ -34,16 +27,9 @@ require_once  __dir__ .'/../../include/vue_generique.php';
 				  </div>';
 		}
 
-/*		public function affiche_deconnexion(){
-			echo '<a href = index.php?module=joueur&action=idOk&input=deco">Deconnexion</a>';
-		}
-*/
+
 		public function affiche_formulaire_inscription(){
-			/*echo'Inscription :<br><form action="index.php?module=connexion&action=inscription" method="post">
-      				<p>Identifiant : <input type="text" name="id" /></p>
-      				<p>Mot de passe : <input type="password" name="password" /></p>
-     				<p><input type="submit" value="OK"></p>
-    			</form>';*/
+			
     			
     		echo'<div class="login-page">
 				  	<div class="form">
