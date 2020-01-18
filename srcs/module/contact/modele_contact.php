@@ -15,7 +15,7 @@ class ModeleContact extends ModeleGenerique{
             	echo 'La connexion a échoué :'. $erreur->getMessage();
         }
 
-		return $tab;
+		return 1;
 		
 	}
 }
